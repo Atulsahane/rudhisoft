@@ -1,0 +1,3295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about RUDHISOFT - Our mission, vision, values, team, and the journey that made us a leading technology solutions provider.">
+  <title>About Us | RUDHISOFT - Innovative Tech Solutions</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    /* =========================
+       CSS CUSTOM PROPERTIES
+    ========================== */
+    :root {
+      /* Primary Colors */
+      --primary: #2e3192;
+      --primary-dark: #1a1d5a;
+      --primary-light: #4a4fcf;
+      --primary-gradient: linear-gradient(135deg, #2e3192 0%, #1a1d5a 100%);
+
+      /* Accent Colors */
+      --accent: #00d4ff;
+      --accent-secondary: #7c3aed;
+      --gold: #fbbf24;
+
+      /* Neutral Colors */
+      --white: #ffffff;
+      --off-white: #f8fafc;
+      --gray-50: #f9fafb;
+      --gray-100: #f3f4f6;
+      --gray-200: #e5e7eb;
+      --gray-300: #d1d5db;
+      --gray-400: #9ca3af;
+      --gray-500: #6b7280;
+      --gray-600: #4b5563;
+      --gray-700: #374151;
+      --gray-800: #1f2937;
+      --gray-900: #111827;
+
+      /* Typography */
+      --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-display: 'Space Grotesk', sans-serif;
+
+      /* Shadows */
+      --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+      --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+      --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+      --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+      --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+
+      /* Transitions */
+      --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+      --transition-base: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+      --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      /* Border Radius */
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --radius-xl: 24px;
+      --radius-2xl: 32px;
+      --radius-full: 9999px;
+    }
+
+    /* =========================
+       RESET & BASE STYLES
+    ========================== */
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-size: 16px;
+      overflow-x: hidden;
+    }
+
+    @media (max-width: 768px) {
+      html {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      html {
+        font-size: 13px;
+      }
+    }
+
+    body {
+      font-family: var(--font-primary);
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--gray-700);
+      background: var(--white);
+      overflow-x: hidden;
+      width: 100%;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    /* =========================
+       UTILITY CLASSES
+    ========================== */
+    .container {
+      width: 90%;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        width: 95%;
+        padding: 0 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        width: 100%;
+        padding: 0 15px;
+      }
+    }
+
+    .section-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      background: linear-gradient(135deg, rgba(46, 49, 146, 0.1), rgba(124, 58, 237, 0.1));
+      border: 1px solid rgba(46, 49, 146, 0.2);
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 480px) {
+      .section-badge {
+        font-size: 0.75rem;
+        padding: 6px 12px;
+        gap: 6px;
+      }
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.75rem, 5vw, 3rem);
+      font-weight: 700;
+      color: var(--gray-900);
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+
+    .section-title span {
+      background: var(--primary-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .section-subtitle {
+      font-size: clamp(1rem, 2vw, 1.1rem);
+      color: var(--gray-500);
+      max-width: 600px;
+      line-height: 1.7;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .mx-auto {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* =========================
+       HEADER / NAVIGATION
+       (Exact copy from reference)
+    ========================== */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 20px 0;
+      transition: all var(--transition-base);
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        padding: 15px 0;
+      }
+    }
+
+    .header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      opacity: 0;
+      transition: opacity var(--transition-base);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .header.scrolled::before {
+      opacity: 1;
+    }
+
+    .header.scrolled {
+      padding: 12px 0;
+    }
+
+    .header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Logo */
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-icon {
+      width: 42px;
+      height: 42px;
+      background: var(--primary-gradient);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      color: var(--white);
+      font-size: 1.2rem;
+      font-family: var(--font-display);
+    }
+
+    @media (max-width: 480px) {
+      .logo-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+      }
+    }
+
+    .logo-text {
+      font-family: var(--font-display);
+      font-size: clamp(1.2rem, 3vw, 1.6rem);
+      font-weight: 700;
+      color: var(--gray-900);
+      transition: color var(--transition-base);
+    }
+
+    /* Navigation */
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      list-style: none;
+    }
+
+    .nav-links li a {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 18px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--gray-600);
+      border-radius: var(--radius-md);
+      transition: all var(--transition-base);
+      position: relative;
+    }
+
+    /* Underline effect */
+    .nav-links li a::after {
+      content: '';
+      position: absolute;
+      bottom: 8px;
+      left: 18px;
+      right: 18px;
+      height: 2px;
+      background: currentColor;
+      transform: scaleX(0);
+      transition: transform var(--transition-base);
+      border-radius: 2px;
+    }
+
+    .nav-links li a:hover {
+      background: transparent;
+      color: var(--primary);
+    }
+
+    .nav-links li a:hover::after {
+      transform: scaleX(1);
+    }
+
+    .nav-links li a.active {
+      color: var(--primary);
+    }
+
+    .nav-links li a.active::after {
+      transform: scaleX(1);
+    }
+
+    /* CTA Button in Nav */
+    .nav-cta {
+      margin-left: 16px;
+    }
+
+    .nav-cta .btn-nav {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      background: var(--primary-gradient);
+      color: var(--white);
+      font-weight: 600;
+      font-size: 0.9rem;
+      border-radius: var(--radius-full);
+      transition: all var(--transition-base);
+      box-shadow: var(--shadow-md);
+      white-space: nowrap;
+    }
+
+    .nav-cta .btn-nav:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-xl);
+    }
+
+    /* Hamburger Menu */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 44px;
+      height: 44px;
+      background: var(--white);
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      z-index: 1001;
+      transition: background var(--transition-base);
+    }
+
+    .hamburger span {
+      width: 22px;
+      height: 2px;
+      background: #2e3192;
+      display: block;
+      border-radius: 2px;
+      transition: all var(--transition-base);
+    }
+
+    .hamburger span:nth-child(1) {
+      margin-bottom: 5px;
+    }
+
+    .hamburger span:nth-child(3) {
+      margin-top: 5px;
+    }
+
+    .hamburger.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    /* Mobile Navigation */
+    @media (max-width: 1024px) {
+      .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        max-width: 400px;
+        height: 100vh;
+        background: var(--white);
+        flex-direction: column;
+        align-items: stretch;
+        padding: 100px 30px 40px;
+        gap: 0;
+        transition: right var(--transition-slow);
+        box-shadow: var(--shadow-2xl);
+        overflow-y: auto;
+      }
+
+      .nav-links.active {
+        right: 0;
+      }
+
+      .nav-links li a {
+        color: var(--gray-700);
+        padding: 16px 20px;
+        font-size: 1rem;
+        border-bottom: 1px solid var(--gray-100);
+        border-radius: 0;
+      }
+
+      .nav-links li a::after {
+        display: none;
+      }
+
+      .nav-links li a:hover {
+        background: var(--gray-50);
+        color: var(--primary);
+      }
+
+      .nav-cta {
+        margin: 20px 0 0 0;
+      }
+
+      .nav-cta .btn-nav {
+        width: 100%;
+        justify-content: center;
+        background: var(--primary-gradient);
+        color: var(--white);
+      }
+
+      .hamburger {
+        display: flex;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .nav-links {
+        max-width: 100%;
+        padding: 80px 20px 30px;
+      }
+    }
+
+    /* Mobile Menu Overlay */
+    .nav-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      visibility: hidden;
+      transition: all var(--transition-base);
+      z-index: 999;
+    }
+
+    .nav-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* =========================
+       COMPANY INTRO SECTION
+    ========================== */
+    .company-intro {
+      padding: 140px 0 100px;
+      background: var(--white);
+      overflow: hidden;
+    }
+
+    @media (max-width: 768px) {
+      .company-intro {
+        padding: 100px 0 60px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .company-intro {
+        padding: 90px 0 50px;
+      }
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    @media (max-width: 992px) {
+      .intro-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .intro-grid {
+        gap: 40px;
+      }
+    }
+
+    .intro-content {
+      position: relative;
+    }
+
+    .intro-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+    }
+
+    .intro-label::before {
+      content: '';
+      width: 40px;
+      height: 2px;
+      background: var(--primary);
+    }
+
+    @media (max-width: 480px) {
+      .intro-label {
+        font-size: 0.75rem;
+      }
+      
+      .intro-label::before {
+        width: 25px;
+      }
+    }
+
+    .intro-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.75rem, 4vw, 2.8rem);
+      font-weight: 700;
+      color: var(--gray-900);
+      line-height: 1.2;
+      margin-bottom: 24px;
+    }
+
+    .intro-title span {
+      background: var(--primary-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .intro-text {
+      font-size: clamp(0.95rem, 2vw, 1.1rem);
+      color: var(--gray-600);
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .intro-text.highlight {
+      font-size: clamp(1rem, 2vw, 1.15rem);
+      color: var(--gray-800);
+      font-weight: 500;
+      padding-left: 20px;
+      border-left: 4px solid var(--primary);
+      margin: 28px 0;
+    }
+
+    @media (max-width: 480px) {
+      .intro-text.highlight {
+        padding-left: 15px;
+        margin: 20px 0;
+      }
+    }
+
+    .intro-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 35px;
+      padding-top: 35px;
+      border-top: 1px solid var(--gray-200);
+    }
+
+    @media (max-width: 480px) {
+      .intro-stats {
+        gap: 15px;
+        margin-top: 25px;
+        padding-top: 25px;
+      }
+    }
+
+    .intro-stat {
+      text-align: center;
+    }
+
+    .intro-stat-number {
+      font-family: var(--font-display);
+      font-size: clamp(1.5rem, 4vw, 2.2rem);
+      font-weight: 700;
+      color: var(--primary);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .intro-stat-label {
+      font-size: clamp(0.7rem, 1.5vw, 0.85rem);
+      color: var(--gray-500);
+    }
+
+    /* Intro Visual */
+    .intro-visual {
+      position: relative;
+    }
+
+    @media (max-width: 992px) {
+      .intro-visual {
+        order: -1;
+        max-width: 550px;
+        margin: 0 auto;
+      }
+    }
+
+    .intro-image-main {
+      position: relative;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-2xl);
+    }
+
+    .intro-image-main img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+      .intro-image-main img {
+        height: 320px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .intro-image-main img {
+        height: 250px;
+      }
+    }
+
+    .intro-image-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 30px 25px;
+      background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    }
+
+    @media (max-width: 480px) {
+      .intro-image-overlay {
+        padding: 20px 15px;
+      }
+    }
+
+    .intro-image-text {
+      color: var(--white);
+      font-size: clamp(0.85rem, 2vw, 1rem);
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    /* Float Cards - Below image to prevent overflow */
+    .intro-cards-row {
+      display: flex;
+      gap: 20px;
+      margin-top: 25px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 600px) {
+      .intro-cards-row {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+
+    .intro-float-card {
+      background: var(--white);
+      padding: 18px 22px;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-xl);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex: 1;
+      min-width: 200px;
+      border: 1px solid var(--gray-100);
+    }
+
+    .intro-float-icon {
+      width: 50px;
+      height: 50px;
+      background: var(--primary-gradient);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 480px) {
+      .intro-float-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 1.2rem;
+      }
+    }
+
+    .intro-float-content h4 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--gray-900);
+      margin-bottom: 2px;
+    }
+
+    .intro-float-content p {
+      font-size: 0.8rem;
+      color: var(--gray-500);
+    }
+
+    .intro-badge-card {
+      background: var(--primary-gradient);
+      color: var(--white);
+      padding: 18px 28px;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-xl);
+      text-align: center;
+      flex: 0 0 auto;
+    }
+
+    .intro-badge-card h4 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .intro-badge-card p {
+      font-size: 0.8rem;
+      opacity: 0.9;
+    }
+
+    /* =========================
+       MISSION & VISION SECTION
+    ========================== */
+    .mission-vision {
+      padding: 100px 0;
+      background: var(--gray-50);
+      overflow: hidden;
+    }
+
+    @media (max-width: 768px) {
+      .mission-vision {
+        padding: 70px 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .mission-vision {
+        padding: 50px 0;
+      }
+    }
+
+    .mv-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    @media (max-width: 768px) {
+      .mv-header {
+        margin-bottom: 40px;
+      }
+    }
+
+    .mv-header .section-subtitle {
+      margin: 0 auto;
+    }
+
+    .mv-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .mv-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+      }
+    }
+
+    .mv-card {
+      background: var(--white);
+      padding: 40px 35px;
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      overflow: hidden;
+      transition: transform var(--transition-base), box-shadow var(--transition-base);
+    }
+
+    .mv-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-xl);
+    }
+
+    @media (max-width: 768px) {
+      .mv-card {
+        padding: 30px 25px;
+      }
+      
+      .mv-card:hover {
+        transform: translateY(-4px);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .mv-card {
+        padding: 25px 20px;
+      }
+    }
+
+    .mv-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: var(--primary-gradient);
+    }
+
+    .mv-card.vision-card::before {
+      background: linear-gradient(90deg, var(--accent), var(--accent-secondary));
+    }
+
+    .mv-icon {
+      width: 70px;
+      height: 70px;
+      background: linear-gradient(135deg, rgba(46, 49, 146, 0.1), rgba(124, 58, 237, 0.1));
+      border-radius: var(--radius-lg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      margin-bottom: 22px;
+    }
+
+    @media (max-width: 480px) {
+      .mv-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.7rem;
+        margin-bottom: 18px;
+      }
+    }
+
+    .vision-card .mv-icon {
+      background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(124, 58, 237, 0.1));
+    }
+
+    .mv-card h3 {
+      font-family: var(--font-display);
+      font-size: clamp(1.3rem, 3vw, 1.6rem);
+      font-weight: 700;
+      color: var(--gray-900);
+      margin-bottom: 14px;
+    }
+
+    .mv-card > p {
+      font-size: 0.95rem;
+      color: var(--gray-600);
+      line-height: 1.7;
+      margin-bottom: 22px;
+    }
+
+    .mv-points {
+      list-style: none;
+    }
+
+    .mv-points li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--gray-100);
+      font-size: 0.9rem;
+      color: var(--gray-700);
+    }
+
+    .mv-points li:last-child {
+      border-bottom: none;
+    }
+
+    .mv-points li span {
+      color: var(--primary);
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .vision-card .mv-points li span {
+      color: var(--accent);
+    }
+
+    /* =========================
+       CORE VALUES SECTION
+    ========================== */
+    /* =========================
+   CORE VALUES SECTION - FIXED
+========================== */
+.core-values {
+  padding: 100px 0;
+  background: var(--white);
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .core-values {
+    padding: 70px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .core-values {
+    padding: 50px 0;
+  }
+}
+
+.values-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+  .values-header {
+    margin-bottom: 40px;
+  }
+}
+
+.values-header .section-subtitle {
+  margin: 0 auto;
+}
+
+/* Fixed Grid Layout */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 1200px) {
+  .values-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+/* Value Card Styles */
+.value-card {
+  text-align: center;
+  padding: 35px 25px;
+  background: var(--gray-50);
+  border-radius: var(--radius-xl);
+  transition: all var(--transition-base);
+  border: 1px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.value-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-gradient);
+  opacity: 0;
+  transition: opacity var(--transition-base);
+  z-index: 0;
+}
+
+.value-card:hover {
+  background: var(--white);
+  box-shadow: 0 20px 40px -10px rgba(46, 49, 146, 0.2);
+  transform: translateY(-10px);
+  border-color: rgba(46, 49, 146, 0.1);
+}
+
+.value-card:hover::before {
+  opacity: 0.03;
+}
+
+@media (max-width: 768px) {
+  .value-card:hover {
+    transform: translateY(-5px);
+  }
+}
+
+@media (max-width: 480px) {
+  .value-card {
+    padding: 28px 20px;
+  }
+}
+
+/* Value Icon */
+.value-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, rgba(46, 49, 146, 0.1), rgba(124, 58, 237, 0.1));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin: 0 auto 22px;
+  transition: all var(--transition-base);
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 480px) {
+  .value-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 1.8rem;
+    margin-bottom: 18px;
+  }
+}
+
+/* Hover Effect for Icon - FIXED */
+.value-card:hover .value-icon {
+  background: var(--primary-gradient);
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 10px 30px -5px rgba(46, 49, 146, 0.4);
+}
+
+/* Card Content */
+.value-card h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 1;
+  transition: color var(--transition-base);
+}
+
+.value-card:hover h3 {
+  color: var(--primary);
+}
+
+.value-card p {
+  font-size: 0.9rem;
+  color: var(--gray-500);
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+  transition: color var(--transition-base);
+}
+
+.value-card:hover p {
+  color: var(--gray-600);
+}
+
+/* Touch device improvements for value cards */
+@media (hover: none) and (pointer: coarse) {
+  .value-card:hover {
+    transform: none;
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .value-card:hover .value-icon {
+    transform: scale(1.05);
+  }
+  
+  .value-card:active {
+    transform: scale(0.98);
+  }
+  
+  .value-card:active .value-icon {
+    background: var(--primary-gradient);
+    transform: scale(1.1);
+    
+  }
+}
+    /* =========================
+       OUR STORY / TIMELINE
+    ========================== */
+    .our-story {
+      padding: 100px 0;
+      background: var(--gray-50);
+      overflow: hidden;
+    }
+
+    @media (max-width: 768px) {
+      .our-story {
+        padding: 70px 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .our-story {
+        padding: 50px 0;
+      }
+    }
+
+    .story-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    @media (max-width: 768px) {
+      .story-header {
+        margin-bottom: 40px;
+      }
+    }
+
+    .story-header .section-subtitle {
+      margin: 0 auto;
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 3px;
+      height: 100%;
+      background: linear-gradient(180deg, var(--primary), var(--accent-secondary), var(--accent));
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .timeline::before {
+        left: 15px;
+        transform: none;
+      }
+    }
+
+    .timeline-item {
+      display: flex;
+      justify-content: flex-end;
+      padding-right: calc(50% + 35px);
+      position: relative;
+      margin-bottom: 50px;
+    }
+
+    .timeline-item:nth-child(even) {
+      justify-content: flex-start;
+      padding-right: 0;
+      padding-left: calc(50% + 35px);
+    }
+
+    @media (max-width: 768px) {
+      .timeline-item,
+      .timeline-item:nth-child(even) {
+        padding-left: 50px;
+        padding-right: 0;
+        justify-content: flex-start;
+      }
+    }
+
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-marker {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 20px;
+      height: 20px;
+      background: var(--white);
+      border: 3px solid var(--primary);
+      border-radius: 50%;
+      z-index: 1;
+      transition: all var(--transition-base);
+    }
+
+    @media (max-width: 768px) {
+      .timeline-marker {
+        left: 15px;
+        transform: translateX(-50%);
+      }
+    }
+
+    .timeline-item:hover .timeline-marker {
+      background: var(--primary);
+      transform: translateX(-50%) scale(1.2);
+    }
+
+    .timeline-content {
+      background: var(--white);
+      padding: 28px;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      width: 100%;
+      max-width: 360px;
+      transition: all var(--transition-base);
+    }
+
+    @media (max-width: 768px) {
+      .timeline-content {
+        max-width: 100%;
+        padding: 22px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .timeline-content {
+        padding: 18px;
+      }
+    }
+
+    .timeline-item:hover .timeline-content {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-xl);
+    }
+
+    .timeline-year {
+      display: inline-block;
+      background: var(--primary-gradient);
+      color: var(--white);
+      padding: 5px 14px;
+      border-radius: var(--radius-full);
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 14px;
+    }
+
+    .timeline-content h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--gray-900);
+      margin-bottom: 10px;
+    }
+
+    .timeline-content p {
+      font-size: 0.9rem;
+      color: var(--gray-600);
+      line-height: 1.6;
+    }
+
+    /* =========================
+       LEADERSHIP TEAM SECTION
+    ========================== */
+    .leadership {
+      padding: 100px 0;
+      background: var(--white);
+      overflow: hidden;
+    }
+
+    @media (max-width: 768px) {
+      .leadership {
+        padding: 70px 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .leadership {
+        padding: 50px 0;
+      }
+    }
+
+    .leadership-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    @media (max-width: 768px) {
+      .leadership-header {
+        margin-bottom: 40px;
+      }
+    }
+
+    .leadership-header .section-subtitle {
+      margin: 0 auto;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 25px;
+    }
+
+    @media (max-width: 1200px) {
+      .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .team-grid {
+        grid-template-columns: 1fr;
+        max-width: 350px;
+        margin: 0 auto;
+      }
+    }
+
+    .team-card {
+      text-align: center;
+      background: var(--gray-50);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      transition: all var(--transition-base);
+    }
+
+    .team-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-xl);
+    }
+
+    @media (max-width: 768px) {
+      .team-card:hover {
+        transform: translateY(-4px);
+      }
+    }
+
+    .team-image {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .team-image img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      transition: transform var(--transition-slow);
+    }
+
+    @media (max-width: 480px) {
+      .team-image img {
+        height: 220px;
+      }
+    }
+
+    .team-card:hover .team-image img {
+      transform: scale(1.05);
+    }
+
+    .team-image-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(transparent 50%, rgba(46, 49, 146, 0.9));
+      opacity: 0;
+      transition: opacity var(--transition-base);
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding-bottom: 18px;
+    }
+
+    .team-card:hover .team-image-overlay {
+      opacity: 1;
+    }
+
+    .team-social {
+      display: flex;
+      gap: 10px;
+    }
+
+    .team-social a {
+      width: 38px;
+      height: 38px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 0.95rem;
+      transition: all var(--transition-base);
+    }
+
+    .team-social a:hover {
+      background: var(--white);
+      color: var(--primary);
+    }
+
+    .team-info {
+      padding: 22px 18px;
+    }
+
+    .team-info h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--gray-900);
+      margin-bottom: 5px;
+    }
+
+    .team-info .team-role {
+      font-size: 0.85rem;
+      color: var(--primary);
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    .team-info p {
+      font-size: 0.8rem;
+      color: var(--gray-500);
+      line-height: 1.5;
+    }
+
+    /* Extended Team */
+    .extended-team {
+      margin-top: 60px;
+      padding: 40px;
+      background: var(--gray-50);
+      border-radius: var(--radius-xl);
+    }
+
+    @media (max-width: 768px) {
+      .extended-team {
+        margin-top: 45px;
+        padding: 30px 25px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .extended-team {
+        padding: 25px 20px;
+      }
+    }
+
+    .extended-team-header {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    @media (max-width: 768px) {
+      .extended-team-header {
+        margin-bottom: 25px;
+      }
+    }
+
+    .extended-team-header h3 {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--gray-900);
+      margin-bottom: 8px;
+    }
+
+    .extended-team-header p {
+      color: var(--gray-500);
+      font-size: 0.95rem;
+    }
+
+    .extended-team-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 18px;
+    }
+
+    @media (max-width: 1200px) {
+      .extended-team-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .extended-team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .extended-team-grid {
+        gap: 12px;
+      }
+    }
+
+    .extended-team-item {
+      text-align: center;
+      padding: 22px 12px;
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      transition: all var(--transition-base);
+    }
+
+    .extended-team-item:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .extended-team-icon {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 480px) {
+      .extended-team-icon {
+        font-size: 1.4rem;
+      }
+    }
+
+    .extended-team-item h4 {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--gray-800);
+      margin-bottom: 4px;
+    }
+
+    .extended-team-item p {
+      font-size: 0.8rem;
+      color: var(--primary);
+      font-weight: 500;
+    }
+
+    /* =========================
+       ACHIEVEMENTS SECTION
+    ========================== */
+    .achievements {
+      padding: 80px 0;
+      background: var(--primary-gradient);
+      overflow: hidden;
+    }
+
+    @media (max-width: 768px) {
+      .achievements {
+        padding: 60px 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .achievements {
+        padding: 50px 0;
+      }
+    }
+
+    .achievements-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 25px;
+    }
+
+    @media (max-width: 992px) {
+      .achievements-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .achievements-grid {
+        gap: 15px;
+      }
+    }
+
+    .achievement-item {
+      text-align: center;
+      padding: 30px 20px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: var(--radius-xl);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      transition: all var(--transition-base);
+    }
+
+    .achievement-item:hover {
+      background: rgba(255, 255, 255, 0.15);
+      transform: translateY(-5px);
+    }
+
+    @media (max-width: 480px) {
+      .achievement-item {
+        padding: 22px 15px;
+      }
+      
+      .achievement-item:hover {
+        transform: translateY(-3px);
+      }
+    }
+
+    .achievement-icon {
+      font-size: 2.2rem;
+      margin-bottom: 14px;
+    }
+
+    @media (max-width: 480px) {
+      .achievement-icon {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+      }
+    }
+
+    .achievement-number {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .achievement-label {
+      font-size: clamp(0.8rem, 2vw, 0.95rem);
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    /* =========================
+       CULTURE SECTION
+    ========================== */
+    .culture {
+      padding: 100px 0;
+      background: var(--gray-50);
+      overflow: hidden;
+    }
+
+    @media (max-width: 768px) {
+      .culture {
+        padding: 70px 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .culture {
+        padding: 50px 0;
+      }
+    }
+
+    .culture-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    @media (max-width: 992px) {
+      .culture-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+      }
+    }
+
+    .culture-content {
+      /* No extra padding needed */
+    }
+
+    .culture-text {
+      font-size: clamp(0.95rem, 2vw, 1.05rem);
+      color: var(--gray-600);
+      line-height: 1.8;
+      margin-bottom: 18px;
+    }
+
+    .culture-features {
+      margin-top: 35px;
+    }
+
+    @media (max-width: 768px) {
+      .culture-features {
+        margin-top: 25px;
+      }
+    }
+
+    .culture-feature {
+      display: flex;
+      gap: 18px;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--gray-200);
+    }
+
+    @media (max-width: 480px) {
+      .culture-feature {
+        gap: 14px;
+        padding: 14px 0;
+      }
+    }
+
+    .culture-feature:last-child {
+      border-bottom: none;
+    }
+
+    .culture-feature-icon {
+      width: 52px;
+      height: 52px;
+      background: linear-gradient(135deg, rgba(46, 49, 146, 0.1), rgba(124, 58, 237, 0.1));
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 480px) {
+      .culture-feature-icon {
+        width: 46px;
+        height: 46px;
+        font-size: 1.2rem;
+      }
+    }
+
+    .culture-feature h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--gray-900);
+      margin-bottom: 4px;
+    }
+
+    .culture-feature p {
+      font-size: 0.9rem;
+      color: var(--gray-500);
+      line-height: 1.5;
+    }
+
+    .culture-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    @media (max-width: 600px) {
+      .culture-images {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+    }
+
+    .culture-image {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .culture-image img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      transition: transform var(--transition-slow);
+    }
+
+    @media (max-width: 480px) {
+      .culture-image img {
+        height: 160px;
+      }
+    }
+
+    .culture-image:hover img {
+      transform: scale(1.05);
+    }
+
+    .culture-image.large {
+      grid-column: span 2;
+    }
+
+    @media (max-width: 600px) {
+      .culture-image.large {
+        grid-column: span 1;
+      }
+    }
+
+    .culture-image.large img {
+      height: 200px;
+    }
+
+    @media (max-width: 480px) {
+      .culture-image.large img {
+        height: 180px;
+      }
+    }
+
+    /* =========================
+       WHY WORK WITH US
+    ========================== */
+    .why-work-with-us {
+      padding: 100px 0;
+      background: var(--white);
+      overflow: hidden;
+    }
+
+    @media (max-width: 768px) {
+      .why-work-with-us {
+        padding: 70px 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .why-work-with-us {
+        padding: 50px 0;
+      }
+    }
+
+    .why-work-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    @media (max-width: 768px) {
+      .why-work-header {
+        margin-bottom: 40px;
+      }
+    }
+
+    .why-work-header .section-subtitle {
+      margin: 0 auto;
+    }
+
+    .why-work-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    @media (max-width: 992px) {
+      .why-work-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .why-work-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+    }
+
+    .why-work-card {
+      display: flex;
+      gap: 18px;
+      padding: 30px 25px;
+      background: var(--gray-50);
+      border-radius: var(--radius-xl);
+      border-left: 4px solid transparent;
+      transition: all var(--transition-base);
+    }
+
+    .why-work-card:hover {
+      background: var(--white);
+      box-shadow: var(--shadow-xl);
+      border-left-color: var(--primary);
+      transform: translateY(-4px);
+    }
+
+    @media (max-width: 768px) {
+      .why-work-card:hover {
+        transform: translateY(-2px);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .why-work-card {
+        flex-direction: column;
+        gap: 10px;
+        padding: 25px 20px;
+      }
+    }
+
+    .why-work-number {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--primary);
+      opacity: 0.3;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+
+    .why-work-content h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--gray-900);
+      margin-bottom: 8px;
+    }
+
+    .why-work-content p {
+      font-size: 0.9rem;
+      color: var(--gray-500);
+      line-height: 1.6;
+    }
+
+    /* =========================
+       CTA SECTION
+    ========================== */
+    .cta {
+      padding: 90px 0;
+      background: var(--primary-gradient);
+      position: relative;
+      overflow: hidden;
+    }
+
+    @media (max-width: 768px) {
+      .cta {
+        padding: 70px 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .cta {
+        padding: 50px 0;
+      }
+    }
+
+    .cta::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image:
+        radial-gradient(circle at 20% 80%, rgba(0, 212, 255, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(124, 58, 237, 0.15) 0%, transparent 50%);
+    }
+
+    .cta-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+    }
+
+    .cta-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.6rem, 4vw, 2.8rem);
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 18px;
+      line-height: 1.2;
+    }
+
+    .cta-text {
+      font-size: clamp(0.95rem, 2vw, 1.1rem);
+      color: rgba(255, 255, 255, 0.85);
+      max-width: 580px;
+      margin: 0 auto 35px;
+      line-height: 1.7;
+    }
+
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 480px) {
+      .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+      }
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 15px 30px;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: var(--radius-full);
+      transition: all var(--transition-base);
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    @media (max-width: 480px) {
+      .btn {
+        width: 100%;
+        max-width: 280px;
+        padding: 14px 25px;
+        font-size: 0.95rem;
+      }
+    }
+
+    .btn-primary {
+      background: var(--white);
+      color: var(--primary);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-2xl);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid rgba(255, 255, 255, 0.4);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: var(--white);
+      transform: translateY(-3px);
+    }
+
+    .btn-icon {
+      font-size: 1.1rem;
+    }
+
+    /* =========================
+       FOOTER
+    ========================== */
+    .footer {
+      background: var(--gray-900);
+      color: var(--white);
+      padding: 80px 0 0;
+      overflow: hidden;
+    }
+
+    @media (max-width: 768px) {
+      .footer {
+        padding: 60px 0 0;
+      }
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 60px;
+      padding-bottom: 60px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    @media (max-width: 992px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding-bottom: 40px;
+      }
+    }
+
+    .footer-brand {
+      max-width: 320px;
+    }
+
+    @media (max-width: 992px) {
+      .footer-brand {
+        grid-column: 1 / -1;
+        max-width: 100%;
+        text-align: center;
+      }
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 992px) {
+      .footer-logo {
+        justify-content: center;
+      }
+    }
+
+    .footer-logo-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--primary-gradient);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      color: var(--white);
+      font-size: 1.3rem;
+      font-family: var(--font-display);
+    }
+
+    .footer-logo-text {
+      font-family: var(--font-display);
+      font-size: clamp(1.3rem, 3vw, 1.6rem);
+      font-weight: 700;
+    }
+
+    .footer-brand > p {
+      color: var(--gray-400);
+      line-height: 1.7;
+      margin-bottom: 24px;
+      font-size: 0.95rem;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 12px;
+    }
+
+    @media (max-width: 992px) {
+      .footer-social {
+        justify-content: center;
+      }
+    }
+
+    .footer-social a {
+      width: 44px;
+      height: 44px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      transition: all var(--transition-base);
+    }
+
+    .footer-social a:hover {
+      background: var(--primary);
+      transform: translateY(-3px);
+    }
+
+    .footer-column h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 24px;
+      position: relative;
+      padding-bottom: 12px;
+    }
+
+    .footer-column h4::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 30px;
+      height: 3px;
+      background: var(--primary);
+      border-radius: var(--radius-full);
+    }
+
+    @media (max-width: 992px) {
+      .footer-column h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .footer-column {
+        text-align: center;
+      }
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 14px;
+    }
+
+    .footer-links a {
+      color: var(--gray-400);
+      font-size: 0.95rem;
+      transition: all var(--transition-base);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .footer-links a:hover {
+      color: var(--white);
+      padding-left: 5px;
+    }
+
+    @media (max-width: 992px) {
+      .footer-links a {
+        justify-content: center;
+      }
+      
+      .footer-links a:hover {
+        padding-left: 0;
+      }
+    }
+
+    .footer-contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+
+    @media (max-width: 992px) {
+      .footer-contact-item {
+        justify-content: center;
+      }
+    }
+
+    .footer-contact-icon {
+      width: 40px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+
+    .footer-contact-text {
+      color: var(--gray-400);
+      font-size: 0.95rem;
+      line-height: 1.5;
+      word-break: break-word;
+    }
+
+    .footer-contact-text a {
+      color: var(--gray-400);
+      transition: color var(--transition-base);
+    }
+
+    .footer-contact-text a:hover {
+      color: var(--white);
+    }
+
+    .footer-bottom {
+      padding: 30px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px 0;
+      }
+    }
+
+    .footer-copyright {
+      color: var(--gray-500);
+      font-size: 0.9rem;
+    }
+
+    .footer-copyright a {
+      color: var(--primary-light);
+      transition: color var(--transition-base);
+    }
+
+    .footer-copyright a:hover {
+      color: var(--white);
+    }
+
+    .footer-legal {
+      display: flex;
+      gap: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .footer-legal {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+
+    .footer-legal a {
+      color: var(--gray-500);
+      font-size: 0.9rem;
+      transition: color var(--transition-base);
+    }
+
+    .footer-legal a:hover {
+      color: var(--white);
+    }
+
+    /* =========================
+       BACK TO TOP BUTTON
+    ========================== */
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      background: var(--primary-gradient);
+      color: var(--white);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      opacity: 0;
+      visibility: hidden;
+      transition: all var(--transition-base);
+      z-index: 999;
+      box-shadow: var(--shadow-lg);
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+      }
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .back-to-top:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-xl);
+    }
+
+    /* =========================
+       ANIMATIONS
+    ========================== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-left {
+      opacity: 0;
+      transform: translateX(-40px);
+      transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .reveal-left.active {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .reveal-right {
+      opacity: 0;
+      transform: translateX(40px);
+      transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .reveal-right.active {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .stagger-children > * {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .stagger-children.active > *:nth-child(1) { transition-delay: 0.1s; }
+    .stagger-children.active > *:nth-child(2) { transition-delay: 0.2s; }
+    .stagger-children.active > *:nth-child(3) { transition-delay: 0.3s; }
+    .stagger-children.active > *:nth-child(4) { transition-delay: 0.4s; }
+    .stagger-children.active > *:nth-child(5) { transition-delay: 0.5s; }
+    .stagger-children.active > *:nth-child(6) { transition-delay: 0.6s; }
+    .stagger-children.active > *:nth-child(7) { transition-delay: 0.7s; }
+    .stagger-children.active > *:nth-child(8) { transition-delay: 0.8s; }
+
+    .stagger-children.active > * {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* =========================
+       ACCESSIBILITY & REDUCED MOTION
+    ========================== */
+    a:focus-visible,
+    button:focus-visible {
+      outline: 2px solid var(--primary);
+      outline-offset: 4px;
+      border-radius: 4px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+      
+      .reveal, .reveal-left, .reveal-right,
+      .stagger-children > * {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    /* Touch device improvements */
+    @media (hover: none) and (pointer: coarse) {
+      .value-card:hover,
+      .team-card:hover,
+      .why-work-card:hover,
+      .mv-card:hover,
+      .achievement-item:hover,
+      .extended-team-item:hover {
+        transform: none;
+      }
+      
+      .team-image-overlay {
+        opacity: 1;
+        background: linear-gradient(transparent 60%, rgba(46, 49, 146, 0.85));
+      }
+      
+      .culture-image:hover img,
+      .team-card:hover .team-image img {
+        transform: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Overlay -->
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- HEADER -->
+  <header class="header scrolled" id="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">R</div>
+        <span class="logo-text">RUDHISOFT</span>
+      </a>
+      
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html" class="active">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="technology.html">Technology</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li class="nav-cta">
+            <a href="contact.html" class="btn-nav">
+              Contact Us
+              <span>→</span>
+            </a>
+          </li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- COMPANY INTRO SECTION -->
+  <section class="company-intro">
+    <div class="container">
+      <div class="intro-grid">
+        <div class="intro-content reveal-left">
+          <span class="intro-label">Who We Are</span>
+          <h2 class="intro-title">
+            Building the <span>Future</span> of Technology, One Innovation at a Time
+          </h2>
+          <p class="intro-text">
+            Founded with a vision to bridge the gap between business challenges and technological solutions, 
+            RUDHISOFT has grown from a small team of developers into a full-service technology partner 
+            trusted by companies across the globe.
+          </p>
+          <p class="intro-text highlight">
+            "We don't just build software. We engineer solutions that transform how businesses operate, 
+            compete, and grow in the digital age."
+          </p>
+          <p class="intro-text">
+            Our journey began with a simple belief: that technology should empower businesses, not complicate them.
+          </p>
+          
+          <div class="intro-stats">
+            <div class="intro-stat">
+              <div class="intro-stat-number">10+</div>
+              <div class="intro-stat-label">Years</div>
+            </div>
+            <div class="intro-stat">
+              <div class="intro-stat-number">200+</div>
+              <div class="intro-stat-label">Projects</div>
+            </div>
+            <div class="intro-stat">
+              <div class="intro-stat-number">50+</div>
+              <div class="intro-stat-label">Team</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="intro-visual reveal-right">
+          <div class="intro-image-main">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=420&fit=crop" alt="RUDHISOFT Office">
+            <div class="intro-image-overlay">
+              <p class="intro-image-text">
+                Our state-of-the-art office where innovation meets collaboration
+              </p>
+            </div>
+          </div>
+          
+          <!-- Cards placed BELOW image - No overflow issues -->
+          <div class="intro-cards-row">
+            <div class="intro-float-card">
+              <div class="intro-float-icon">🌍</div>
+              <div class="intro-float-content">
+                <h4>Global Presence</h4>
+                <p>Serving 15+ Countries</p>
+              </div>
+            </div>
+            
+            <div class="intro-badge-card">
+              <h4>98%</h4>
+              <p>Client Satisfaction</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION & VISION -->
+  <section class="mission-vision">
+    <div class="container">
+      <div class="mv-header reveal">
+        <span class="section-badge">
+          <span>🎯</span>
+          Our Purpose
+        </span>
+        <h2 class="section-title">Mission & <span>Vision</span></h2>
+        <p class="section-subtitle mx-auto">
+          Guided by purpose, driven by innovation — discover the principles that shape 
+          everything we do at RUDHISOFT.
+        </p>
+      </div>
+      
+      <div class="mv-grid stagger-children">
+        <div class="mv-card">
+          <div class="mv-icon">🚀</div>
+          <h3>Our Mission</h3>
+          <p>
+            To empower organizations worldwide with innovative, scalable, and intelligent 
+            technology solutions that drive growth and competitive advantage.
+          </p>
+          <ul class="mv-points">
+            <li><span>✓</span> Deliver excellence in every project</li>
+            <li><span>✓</span> Build lasting partnerships</li>
+            <li><span>✓</span> Continuously innovate</li>
+            <li><span>✓</span> Create measurable business value</li>
+          </ul>
+        </div>
+        
+        <div class="mv-card vision-card">
+          <div class="mv-icon">🔮</div>
+          <h3>Our Vision</h3>
+          <p>
+            To be the world's most trusted technology partner, recognized for our innovation, 
+            expertise, and commitment to client success.
+          </p>
+          <ul class="mv-points">
+            <li><span>✓</span> Lead digital transformation</li>
+            <li><span>✓</span> Set industry standards</li>
+            <li><span>✓</span> Build global community</li>
+            <li><span>✓</span> Shape the future of tech</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CORE VALUES -->
+  <!-- CORE VALUES -->
+<section class="core-values">
+  <div class="container">
+    <div class="values-header reveal">
+      <span class="section-badge">
+        <span>💎</span>
+        What We Stand For
+      </span>
+      <h2 class="section-title">Our Core <span>Values</span></h2>
+      <p class="section-subtitle mx-auto">
+        These principles guide our decisions and define how we work with our clients.
+      </p>
+    </div>
+    
+    <div class="values-grid stagger-children">
+      <div class="value-card">
+        <div class="value-icon">💡</div>
+        <h3>Innovation First</h3>
+        <p>We embrace new ideas to solve complex challenges creatively.</p>
+      </div>
+      
+      <div class="value-card">
+        <div class="value-icon">🎯</div>
+        <h3>Excellence Always</h3>
+        <p>We never settle for "good enough" in anything we do.</p>
+      </div>
+      
+      <div class="value-card">
+        <div class="value-icon">🤝</div>
+        <h3>Client Partnership</h3>
+        <p>We're invested in your success as much as our own.</p>
+      </div>
+      
+      <div class="value-card">
+        <div class="value-icon">🔓</div>
+        <h3>Transparency</h3>
+        <p>Open communication forms the foundation of every relationship.</p>
+      </div>
+      
+      <div class="value-card">
+        <div class="value-icon">📈</div>
+        <h3>Continuous Growth</h3>
+        <p>We constantly evolve to stay at the forefront of technology.</p>
+      </div>
+      
+      <div class="value-card">
+        <div class="value-icon">🌱</div>
+        <h3>Sustainability</h3>
+        <p>We build solutions designed for the long term.</p>
+      </div>
+      
+      <div class="value-card">
+        <div class="value-icon">🛡️</div>
+        <h3>Integrity</h3>
+        <p>Ethics and honesty are non-negotiable values.</p>
+      </div>
+      
+      <div class="value-card">
+        <div class="value-icon">👥</div>
+        <h3>Collaboration</h3>
+        <p>Great things happen when diverse minds work together.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- OUR STORY / TIMELINE -->
+  <section class="our-story">
+    <div class="container">
+      <div class="story-header reveal">
+        <span class="section-badge">
+          <span>📖</span>
+          Our Journey
+        </span>
+        <h2 class="section-title">The RUDHISOFT <span>Story</span></h2>
+        <p class="section-subtitle mx-auto">
+          From humble beginnings to a global technology partner.
+        </p>
+      </div>
+      
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2020</span>
+            <h3>The Beginning</h3>
+            <p>Founded by a small team of passionate developers with a vision to create technology that truly matters.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2021</span>
+            <h3>First Major Client</h3>
+            <p>Secured our first enterprise client and successfully delivered a large-scale ERP system.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2022</span>
+            <h3>Global Expansion</h3>
+            <p>Expanded operations internationally, opening offices in 3 countries with 25+ team members.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2023</span>
+            <h3>AI & Cloud Focus</h3>
+            <p>Launched dedicated AI and Cloud practices with proprietary frameworks and tools.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2024</span>
+            <h3>The Future is Now</h3>
+            <p>50+ team members serving clients across 15+ countries with cutting-edge solutions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEADERSHIP TEAM -->
+  <section class="leadership">
+    <div class="container">
+      <div class="leadership-header reveal">
+        <span class="section-badge">
+          <span>👥</span>
+          Meet Our Leaders
+        </span>
+        <h2 class="section-title">Leadership <span>Team</span></h2>
+        <p class="section-subtitle mx-auto">
+          The visionaries driving RUDHISOFT forward.
+        </p>
+      </div>
+      
+      <div class="team-grid stagger-children">
+        <div class="team-card">
+          <div class="team-image">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=300&fit=crop" alt="CEO">
+            <div class="team-image-overlay">
+              <div class="team-social">
+                <a href="#" aria-label="LinkedIn">💼</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+              </div>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3>Rajesh Kumar</h3>
+            <p class="team-role">Founder & CEO</p>
+            <p>20+ years in technology leadership.</p>
+          </div>
+        </div>
+        
+        <div class="team-card">
+          <div class="team-image">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop" alt="CTO">
+            <div class="team-image-overlay">
+              <div class="team-social">
+                <a href="#" aria-label="LinkedIn">💼</a>
+                <a href="#" aria-label="GitHub">💻</a>
+              </div>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3>Amit Sharma</h3>
+            <p class="team-role">CTO</p>
+            <p>AI/ML expert with 15+ years experience.</p>
+          </div>
+        </div>
+        
+        <div class="team-card">
+          <div class="team-image">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop" alt="COO">
+            <div class="team-image-overlay">
+              <div class="team-social">
+                <a href="#" aria-label="LinkedIn">💼</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+              </div>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3>Priya Patel</h3>
+            <p class="team-role">COO</p>
+            <p>Operations specialist worldwide.</p>
+          </div>
+        </div>
+        
+        <div class="team-card">
+          <div class="team-image">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&h=300&fit=crop" alt="CPO">
+            <div class="team-image-overlay">
+              <div class="team-social">
+                <a href="#" aria-label="LinkedIn">💼</a>
+                <a href="#" aria-label="Dribbble">🎨</a>
+              </div>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3>Michael Chen</h3>
+            <p class="team-role">CPO</p>
+            <p>Product visionary & UX expert.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Extended Team -->
+      <div class="extended-team reveal">
+        <div class="extended-team-header">
+          <h3>Our Expert Teams</h3>
+          <p>Dedicated specialists across every domain.</p>
+        </div>
+        <div class="extended-team-grid">
+          <div class="extended-team-item">
+            <div class="extended-team-icon">👨‍💻</div>
+            <h4>Engineering</h4>
+            <p>25+ Devs</p>
+          </div>
+          <div class="extended-team-item">
+            <div class="extended-team-icon">🎨</div>
+            <h4>Design</h4>
+            <p>8+ Designers</p>
+          </div>
+          <div class="extended-team-item">
+            <div class="extended-team-icon">☁️</div>
+            <h4>DevOps</h4>
+            <p>6+ Engineers</p>
+          </div>
+          <div class="extended-team-item">
+            <div class="extended-team-icon">🤖</div>
+            <h4>AI/ML</h4>
+            <p>5+ Specialists</p>
+          </div>
+          <div class="extended-team-item">
+            <div class="extended-team-icon">📊</div>
+            <h4>Analytics</h4>
+            <p>4+ Analysts</p>
+          </div>
+          <div class="extended-team-item">
+            <div class="extended-team-icon">🛡️</div>
+            <h4>QA</h4>
+            <p>6+ Testers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS SECTION -->
+  <section class="achievements">
+    <div class="container">
+      <div class="achievements-grid stagger-children">
+        <div class="achievement-item">
+          <div class="achievement-icon">🏆</div>
+          <div class="achievement-number">200+</div>
+          <div class="achievement-label">Projects Completed</div>
+        </div>
+        
+        <div class="achievement-item">
+          <div class="achievement-icon">😊</div>
+          <div class="achievement-number">98%</div>
+          <div class="achievement-label">Client Satisfaction</div>
+        </div>
+        
+        <div class="achievement-item">
+          <div class="achievement-icon">🌍</div>
+          <div class="achievement-number">15+</div>
+          <div class="achievement-label">Countries Served</div>
+        </div>
+        
+        <div class="achievement-item">
+          <div class="achievement-icon">🏅</div>
+          <div class="achievement-number">12+</div>
+          <div class="achievement-label">Industry Awards</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CULTURE SECTION -->
+  <section class="culture">
+    <div class="container">
+      <div class="culture-grid">
+        <div class="culture-content reveal-left">
+          <span class="section-badge">
+            <span>🌟</span>
+            Life at RUDHISOFT
+          </span>
+          <h2 class="section-title">Our <span>Culture</span></h2>
+          <p class="culture-text">
+            At RUDHISOFT, we believe that great work comes from great people working in 
+            an environment where they can thrive. Our culture is built on trust, creativity, 
+            and continuous learning.
+          </p>
+          <p class="culture-text">
+            We foster an inclusive workplace where diverse perspectives are celebrated and 
+            everyone has the opportunity to make an impact.
+          </p>
+          
+          <div class="culture-features">
+            <div class="culture-feature">
+              <div class="culture-feature-icon">🎓</div>
+              <div>
+                <h4>Continuous Learning</h4>
+                <p>Access to courses, certifications, and conferences.</p>
+              </div>
+            </div>
+            
+            <div class="culture-feature">
+              <div class="culture-feature-icon">⚖️</div>
+              <div>
+                <h4>Work-Life Balance</h4>
+                <p>Flexible hours and remote work options.</p>
+              </div>
+            </div>
+            
+            <div class="culture-feature">
+              <div class="culture-feature-icon">🎉</div>
+              <div>
+                <h4>Fun & Celebrations</h4>
+                <p>Team events, hackathons, and game nights.</p>
+              </div>
+            </div>
+            
+            <div class="culture-feature">
+              <div class="culture-feature-icon">💪</div>
+              <div>
+                <h4>Health & Wellness</h4>
+                <p>Comprehensive health benefits and gym memberships.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="culture-images reveal-right">
+          <div class="culture-image">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=180&fit=crop" alt="Team Meeting">
+          </div>
+          <div class="culture-image">
+            <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=400&h=180&fit=crop" alt="Team Fun">
+          </div>
+          <div class="culture-image large">
+            <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&h=200&fit=crop" alt="Office Space">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY WORK WITH US -->
+  <section class="why-work-with-us">
+    <div class="container">
+      <div class="why-work-header reveal">
+        <span class="section-badge">
+          <span>🤝</span>
+          Partner With Us
+        </span>
+        <h2 class="section-title">Why Work With <span>RUDHISOFT?</span></h2>
+        <p class="section-subtitle mx-auto">
+          Discover what makes us different and why leading companies choose us.
+        </p>
+      </div>
+      
+      <div class="why-work-grid stagger-children">
+        <div class="why-work-card">
+          <div class="why-work-number">01</div>
+          <div class="why-work-content">
+            <h3>Proven Track Record</h3>
+            <p>200+ successful projects delivered across diverse industries.</p>
+          </div>
+        </div>
+        
+        <div class="why-work-card">
+          <div class="why-work-number">02</div>
+          <div class="why-work-content">
+            <h3>Technical Excellence</h3>
+            <p>Certified experts in AI/ML, cloud architecture, and more.</p>
+          </div>
+        </div>
+        
+        <div class="why-work-card">
+          <div class="why-work-number">03</div>
+          <div class="why-work-content">
+            <h3>Agile Methodology</h3>
+            <p>Transparency, flexibility, and faster time-to-market.</p>
+          </div>
+        </div>
+        
+        <div class="why-work-card">
+          <div class="why-work-number">04</div>
+          <div class="why-work-content">
+            <h3>End-to-End Solutions</h3>
+            <p>From ideation to deployment and ongoing support.</p>
+          </div>
+        </div>
+        
+        <div class="why-work-card">
+          <div class="why-work-number">05</div>
+          <div class="why-work-content">
+            <h3>Dedicated Support</h3>
+            <p>24/7 support with dedicated project managers.</p>
+          </div>
+        </div>
+        
+        <div class="why-work-card">
+          <div class="why-work-number">06</div>
+          <div class="why-work-content">
+            <h3>Competitive Pricing</h3>
+            <p>World-class solutions at competitive rates.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta-content reveal">
+        <h2 class="cta-title">Ready to Start Your Journey With Us?</h2>
+        <p class="cta-text">
+          Let's discuss how RUDHISOFT can help transform your business with 
+          innovative technology solutions.
+        </p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn btn-primary">
+            <span>Get in Touch</span>
+            <span class="btn-icon">→</span>
+          </a>
+          <a href="services.html" class="btn btn-secondary">
+            <span>Explore Services</span>
+            <span class="btn-icon">📋</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="footer-logo-icon">R</div>
+            <span class="footer-logo-text">RUDHISOFT</span>
+          </div>
+          <p>
+            Innovative technology solutions that empower businesses to grow 
+            and lead in the digital era.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn">💼</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+            <a href="#" aria-label="GitHub">💻</a>
+            <a href="#" aria-label="Instagram">📷</a>
+          </div>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="portfolio.html">Case Studies</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="#">Custom Development</a></li>
+            <li><a href="#">Mobile Apps</a></li>
+            <li><a href="#">Cloud Solutions</a></li>
+            <li><a href="#">AI & ML</a></li>
+            <li><a href="#">DevOps</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">📧</div>
+            <div class="footer-contact-text">
+              <a href="mailto:info@rudhisoft.com">info@rudhisoft.com</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">📞</div>
+            <div class="footer-contact-text">
+              <a href="tel:+1234567890">+1 (234) 567-890</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">📍</div>
+            <div class="footer-contact-text">
+              123 Tech Street, Innovation City
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          © 2025 <a href="index.html">RUDHISOFT</a>. All rights reserved.
+        </p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="cookies.html">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    // Header Scroll Effect
+    const header = document.getElementById('header');
+    const backToTop = document.getElementById('backToTop');
+    
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        header.classList.add('scrolled');
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+
+    // Mobile Navigation
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    const navOverlay = document.getElementById('navOverlay');
+
+    function toggleMobileNav() {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+      navOverlay.classList.toggle('active');
+      document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+    }
+
+    hamburger.addEventListener('click', toggleMobileNav);
+    navOverlay.addEventListener('click', toggleMobileNav);
+
+    // Close menu when clicking nav links
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (navLinks.classList.contains('active')) {
+          toggleMobileNav();
+        }
+      });
+    });
+
+    // Close menu on escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navLinks.classList.contains('active')) {
+        toggleMobileNav();
+      }
+    });
+
+    // Close menu on window resize
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 1024 && navLinks.classList.contains('active')) {
+        toggleMobileNav();
+      }
+    });
+
+    // Back to Top
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    // Scroll Reveal Animations
+    function reveal() {
+      const reveals = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .stagger-children');
+      const windowHeight = window.innerHeight;
+      const revealPoint = 120;
+
+      reveals.forEach(element => {
+        const elementTop = element.getBoundingClientRect().top;
+        
+        if (elementTop < windowHeight - revealPoint) {
+          element.classList.add('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', reveal);
+    window.addEventListener('load', reveal);
+
+    // Counter Animation
+    function animateCounter(element, target, suffix = '') {
+      let start = 0;
+      const duration = 2000;
+      const increment = target / (duration / 16);
+      
+      function updateCounter() {
+        start += increment;
+        if (start < target) {
+          element.textContent = Math.floor(start) + suffix;
+          requestAnimationFrame(updateCounter);
+        } else {
+          element.textContent = target + suffix;
+        }
+      }
+      
+      updateCounter();
+    }
+
+    // Intersection Observer for counters
+    const observerOptions = { threshold: 0.5 };
+    
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const numbers = entry.target.querySelectorAll('.achievement-number, .intro-stat-number');
+          numbers.forEach(num => {
+            const text = num.textContent;
+            const value = parseInt(text);
+            const suffix = text.includes('%') ? '%' : (text.includes('+') ? '+' : '');
+            num.textContent = '0' + suffix;
+            animateCounter(num, value, suffix);
+          });
+          counterObserver.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    // Observe achievement and stats sections
+    const achievementsGrid = document.querySelector('.achievements-grid');
+    const introStats = document.querySelector('.intro-stats');
+    
+    if (achievementsGrid) counterObserver.observe(achievementsGrid);
+    if (introStats) counterObserver.observe(introStats);
+  </script>
+
+</body>
+</html>
